@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smarthomebnbs | Book Your Stay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smarthomebnbs</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pictures.html">Pictures</a>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+      <select id="location-filter">
+        <option value="all">All Locations</option>
+        <option value="nairobi">Nairobi</option>
+        <option value="mombasa">Mombasa</option>
+        <option value="kisumu">Kisumu</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Find your perfect smart home getaway </h2>
+      <p>Book unique stays across Kenya with Smarthomebnbs.</p>
+    </section>
+
+    <!-- Featured Listings -->
+    <section>
+      <h2>Available Homes </h2>
+      <div class="listing" data-location="nairobi">
+        <img src="https://cdn.pixabay.com/photo/2022/07/05/15/01/villa-7303286_1280.jpg" alt="Nairobi Apartment">
+        <h3>Nairobi City Apartment</h3>
+        <p>Modern 2-bedroom in the heart of Nairobi.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="listing" data-location="mombasa">
+        <img src="https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_1280.jpg" alt="Mombasa Villa">
+        <h3>Beachfront Villa - Mombasa</h3>
+        <p>Enjoy ocean views and fresh seafood.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="listing" data-location="kisumu">
+        <img src="https://cdn.pixabay.com/photo/2017/02/21/11/55/relax-2085676_1280.jpg" alt="Kisumu Lakehouse">
+        <h3>Kisumu Lakehouse</h3>
+        <p>Peaceful retreat with lake views.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section>
+      <h2>Book Your Stay </h2>
+      <form id="booking-form" novalidate>
+        <label>
+          Full Name:
+          <input type="text" id="name" required>
+        </label>
+        <small class="error" id="name-error"></small>
+
+        <label>
+          Email:
+          <input type="email" id="email" required>
+        </label>
+        <small class="error" id="email-error"></small>
+
+        <label>
+          Destination:
+          <select id="destination" required>
+            <option value="">Select a location</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+          </select>
+        </label>
+        <small class="error" id="destination-error"></small>
+
+        <label>
+          Check-in:
+          <input type="date" id="checkin" required>
+        </label>
+
+        <label>
+          Check-out:
+          <input type="date" id="checkout" required>
+        </label>
+
+        <button type="submit">Confirm Booking</button>
+        <p id="form-success" class="success"></p>
+      </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>FAQs ❓</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is Smarthomebnbs?</h3>
+        <p class="faq-answer">A platform to find and book smart homes across Kenya.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How do I book?</h3>
+        <p class="faq-answer">Fill in the booking form and receive confirmation instantly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Smarthomebnbs. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
